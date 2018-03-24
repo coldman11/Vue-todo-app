@@ -2,7 +2,7 @@
     <div>
         <md-table>
             <md-table-row>
-                <md-table-head>ID</md-table-head>
+                <md-table-head>Done</md-table-head>
                 <md-table-head>text</md-table-head>
                 <md-table-head>options</md-table-head>
             </md-table-row>
@@ -38,7 +38,7 @@ export default {
     },
     methods: {
         addTask: function (task) {
-            this.tasks.push({id: this.currentId, text: task});
+            this.tasks.push({id: this.currentId, text: task, done: false});
             this.currentId ++;
         },
         removeTask: function (id) {
@@ -47,3 +47,6 @@ export default {
     }
 }
 </script>
+
+
+

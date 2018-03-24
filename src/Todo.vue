@@ -1,9 +1,9 @@
 <template>
     <div>
         <md-app style="min-height: 100vh;">
-            <md-app-toolbar class="md-accent" md-elevation="1">Todo</md-app-toolbar>
+            <md-app-toolbar class="md-accent" md-elevation="0">Todo</md-app-toolbar>
             <md-app-drawer md-permanent="full">
-                <md-toolbar class="md-transparent" md-elevation="1">
+                <md-toolbar class="md-accent" md-elevation="0">
                     Navigation
                 </md-toolbar>
                 <md-list>
