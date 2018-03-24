@@ -1,16 +1,21 @@
 <template>
     <div>
-        <md-list class="md-triple-line">
+        <md-table>
+            <md-table-row>
+                <md-table-head>ID</md-table-head>
+                <md-table-head>text</md-table-head>
+                <md-table-head>options</md-table-head>
+            </md-table-row>
             <task
                 v-for="task in tasks"
                 :key="task.id"
                 :task="task"
             />
-            <new-task
-                @addTask="addTask"
-                :currentId="currentId"
-            />
-        </md-list>
+        </md-table>
+        <new-task
+            @addTask="addTask"
+            :currentId="currentId"
+        />
     </div>
 </template>
 

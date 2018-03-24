@@ -1,11 +1,9 @@
 <template>
-    <div>
-        <md-list-item>
-            <md-icon></md-icon>
-            <span class="md-list-item-text">{{task.text}}</span>
-        </md-list-item>
-        <md-divider></md-divider>
-    </div>
+    <md-table-row>
+        <md-table-cell>{{task.id}}</md-table-cell>
+        <md-table-cell>{{task.text}}</md-table-cell>
+        <md-table-cell><md-button class="md-raised md-accent">Remove</md-button></md-table-cell>
+    </md-table-row>
 </template>
 
 <script>

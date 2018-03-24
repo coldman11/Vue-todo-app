@@ -1,5 +1,4 @@
 <template>
-    <div>
     <md-list-item>
         <md-button @click="addTask" class="md-fab md-primary">
             <md-icon>add</md-icon>
@@ -9,7 +8,6 @@
             <md-input v-model="newTask" md-counter="30"></md-input>
         </md-field>
     </md-list-item>
-    </div>
 </template>
 
 <script>
