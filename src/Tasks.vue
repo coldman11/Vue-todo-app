@@ -10,6 +10,7 @@
                 v-for="task in tasks"
                 :key="task.id"
                 :task="task"
+                @removeTask="removeTask"
             />
         </md-table>
         <new-task
@@ -39,7 +40,9 @@ export default {
         addTask: function (task) {
             this.tasks.push({id: this.currentId, text: task});
             this.currentId ++;
-            console.log(this.tasks);
+        },
+        removeTask: function (id) {
+            this.tasks.splice(this.tasks.indexOf(this.tasks.find(task => task.id === id)), 1);
         }
     }
 }
